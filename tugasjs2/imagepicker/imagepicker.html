@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+</head>
+<body>
+<fieldset>
+    <b><label for="bts">Bangtan Seonyondan</label></b>
+    <select id="bts">
+        <option value="Kim Namjoon">Kim Namjoon</option>
+        <option value="Kim Seokjin">Kim Seokjin</option>
+        <option value="Min Yoongi">Min Yoongi</option>
+        <option value="Jeong Hoseok">Jeong Hoseok</option>
+        <option value="Park Jimin">Park Jimin</option>
+        <option value="Kim Taehyung">Kim Taehyung</option>
+        <option value="Jeon Jungkook">Jeon Jungkook</option>
+        <option value="BTS">BTS</option>
+
+    </select>
+    <button onclick="cetakGambar()">Lihat Gambar</button>
+    <br><br><img id="gambar" src="">
+</fieldset>
+<script>
+    function cetakGambar() {
+        const bts = document.getElementById('bts');
+        const gambar = document.getElementById('gambar');
+    
+        if (bts.value === 'Kim Namjoon') {
+            gambar.src = 'https://asset.kompas.com/crops/mC2ToFabNYRpW54mD2L1Zj38FUE=/0x0:900x600/750x500/data/photo/2019/02/21/1551074415.jpeg'
+        }
+        if (bts.value === 'Kim Seokjin') {
+            gambar.src = 'https://i.pinimg.com/564x/c1/a6/90/c1a6905b1ee9740d7763f7de35e095db.jpg'
+        }
+        if (bts.value === 'Min Yoongi') {
+            gambar.src = 'https://asset-a.grid.id/crop/0x0:0x0/700x465/photo/2021/12/22/foto-cover-suga-bts-ungkap-alas-20211222033529.jpg'
+        }
+        if (bts.value === 'Jeong Hoseok') {
+            gambar.src = 'https://pbs.twimg.com/media/E761aehXMAgtIaY?format=jpg&name=small'
+         }
+        if (bts.value === 'Park Jimin') {
+            gambar.src = 'https://cdns.klimg.com/resized/670x335/p/headline/berikut-ini-bukti-jimin-bts-bisa-tidur--0cd36e.jpg'
+        }
+        if (bts.value === 'Kim Taehyung') {
+            gambar.src = 'https://images.hindustantimes.com/img/2021/07/29/550x309/V-BTS_1627565874818_1627565881114.PNG'
+        }
+        if (bts.value === 'Jeon Jungkook') {
+            gambar.src = 'https://assets.pikiran-rakyat.com/crop/184x137:1183x1084/x/photo/2020/06/05/3924587212.jpg'
+        }
+        if (bts.value === 'BTS') {
+            gambar.src = 'https://static.republika.co.id/uploads/images/inpicture_slide/bts-masuk-nominasi-grammy-awards-2022_211124073852-482.jpeg'
+        }
+    }
+</script>
+</body>
+</html>

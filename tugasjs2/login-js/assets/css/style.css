@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.login{
+    margin: 250px 550px 50px;
+    background-image: url('https://wallpapercave.com/wp/wp1836700.jpg');
+}
+
+.data-input{
+    width: 30%;
+}
